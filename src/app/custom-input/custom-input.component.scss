@@ -1,0 +1,51 @@
+.customInput {
+    min-height: 20em;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 1px;
+    -webkit-rtl-ordering: logical;
+}
+
+div.editable {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.names {
+    background-color: rgb(248, 174, 63);
+    width: fit-content;
+}
+
+// ::ng-deep .mat-select-content {
+//     width: 2000px;
+//     background-color: red;
+//     font-size: 10px;
+// }
+// ::ng-deep .cdk-overlay-pane {
+//     // top: 0 !important;
+//     left: 0 !important;
+//     transform: none !important;
+// }
+::ng-deep .myPanelClass {
+    margin-top: 30px !important;
+    position: absolute;
+    left: 190px !important;
+    top: 0px !important;
+    max-width: 100% !important;
+}
+
+// ::ng-deep .mat-select-panel {
+//     left: 0
+// }
+::ng-deep .cdk-overlay-container .cdk-overlay-pane {
+    position: absolute;
+    left: 0px !important;
+    top: 0px !important;
+    max-width: 100% !important;
+}

@@ -1,0 +1,14 @@
+<div contenteditable="true" class="customInput" #textArea (input)="valueChanges($event)" (keyup.arrowup)="onKeypressEvent($event.code)" (keyup.arrowdown)="onKeypressEvent($event.code)" (click)="onClick()">
+    Type in the text here....
+</div>
+
+<mat-select disableOptionCentering panelClass="myPanelClass" #mySelect class="box" (selectionChange)="selectName($event.value)" [(ngModel)]="teamInitial">
+    <mat-option *ngFor="let names of searchValues" [value]="names">
+        {{names}}
+    </mat-option>
+</mat-select>
+
+
+<!-- <div contenteditable="false" *ngFor="let item of alpha" class="names" (click)="selectName(item)">
+    {{item}}
+</div> -->
